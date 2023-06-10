@@ -1,0 +1,7 @@
+<div>
+    <h2>Parent Component</h2>
+    <p>Data from Child: {{ dataFromChild }}</p>
+    <button (click)="sendDataToChild()">Send Data to Child</button>
+    <app-child [childData]="dataFromParent" (childEvent)="receiveDataFromChild($event)"></app-child>     
+  </div>
+  
